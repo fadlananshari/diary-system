@@ -1,8 +1,38 @@
-# React + Vite
+# 🚀 Diary System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Selamat datang di **Diary System**! Ini adalah frontend dari aplikasi Diary System yang dibuat dengan React. Pastikan backend **Diary System API** juga berjalan agar aplikasi dapat berfungsi dengan baik.
 
-Currently, two official plugins are available:
+## 📌 Cara Menjalankan Proyek
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lokal:
+
+### 1️⃣ Clone Repository
+Buka terminal dan jalankan perintah berikut untuk mengunduh proyek:
+```sh
+git clone https://github.com/fadlananshari/diary-system.git
+```
+
+### 2️⃣ Masuk ke Direktori Proyek
+Pindah ke folder proyek yang baru saja di-clone:
+```sh
+cd diary-system
+```
+
+### 3️⃣ Instal Dependensi
+Pastikan semua dependensi sudah terinstal dengan menjalankan perintah:
+```sh
+npm install
+```
+
+### 4️⃣ Jalankan Proyek
+Untuk menjalankan aplikasi di mode pengembangan, gunakan perintah berikut:
+```sh
+npm run dev
+```
+Aplikasi sekarang berjalan di **http://localhost:5173** (atau port yang ditentukan di terminal).
+
+## ⚠️ Penting
+Diary System frontend hanya dapat berjalan jika **Diary System API** juga berjalan. Pastikan backend sudah dijalankan sebelum mengakses aplikasi ini.
+
+---
+
