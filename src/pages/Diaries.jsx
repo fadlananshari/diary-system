@@ -28,7 +28,6 @@ const Diaries = () => {
       const token = localStorage.getItem('token');
       const response = await getDiaries(token);
       setDiaries(response.data);
-      console.log(response);
     };
     fetchDiaries();
   }, []);

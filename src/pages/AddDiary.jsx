@@ -26,8 +26,6 @@ const AddDiary = () => {
     const token = localStorage.getItem('token');
     await addDiary(formData, token);
     navigate('/diaries');
-
-    console.log([...formData]);
   };
 
   return (

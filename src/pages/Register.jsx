@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { register } from "../api/Api";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { register } from '../api/Api';
 
 const Register = () => {
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
+  const [form, setForm] = useState({ name: '', email: '', password: '' });
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -13,7 +13,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await register(form);
-    navigate("/login");
+    navigate('/login');
   };
 
   return (
@@ -22,8 +22,10 @@ const Register = () => {
       <form onSubmit={handleSubmit} className="mt-4 space-y-2">
         <input type="text" name="name" placeholder="Nama" onChange={handleChange} className="p-2 border rounded w-full" required />
         <input type="email" name="email" placeholder="Email" onChange={handleChange} className="p-2 border rounded w-full" required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} className="p-2 border rounded w-full" required />
-        <button type="submit" className="px-4 py-2 bg-green-500 text-white rounded">Register</button>
+        <input type="password" name="password" placeholder="Password" onChange={handleChange} className="p-2 border rounded w-full" required minLength="6" />
+        <button type="submit" className="px-4 py-2 bg-green-500 text-white rounded">
+          Register
+        </button>
       </form>
     </div>
   );
